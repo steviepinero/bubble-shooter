@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Bubble Shooter</title>
-    <link href="_css/main.css" rel="stylesheet">
+    <link href="_css/main.css" rel="stylesheet" />
+    <link href="_css/game.css" rel="stylesheet" />
     <script src="_js/modernizr.js"></script>
     <script>
 Modernizr.load([{
@@ -30,7 +31,11 @@ Modernizr.load([{
   <body>
     <div id="page">
       <div id="top bar"></div>
-      <div id="game"></div>
+
+      <div id="game">
+        <div id="board"></div>
+      </div>
+
       <div id="footer_bar"></div>
         <div id="start_game" class="dialog">
           <div id="start_game_message">
