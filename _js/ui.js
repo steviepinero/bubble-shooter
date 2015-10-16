@@ -30,6 +30,15 @@ BubbleShoot.ui = (function($){
       }
       return angle;
     }
+    fireBubble : function(bubbleCoords,duration){
+      bubble.getSprite().animate({
+        left : coords.x - ui.BUBBLE_DIMS/2,
+        top : coords.y - ui.BUBBLE_DIMS/2
+      },
+    {
+      duration : duration,
+      easing : "linear"
+    });
   };
   return ui;
 })(jQuery);
